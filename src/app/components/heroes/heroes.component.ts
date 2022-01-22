@@ -20,6 +20,7 @@ export class HeroesComponent implements OnInit {
 
 
     console.log('Constructor <- ' );
+    // console.log(this.heroes);
 
   }
   
@@ -27,10 +28,22 @@ export class HeroesComponent implements OnInit {
     this.heroes=this._heroesService.getHeroers();
     console.log(this.heroes);
 
+    // fail(f:String){
+
+    // }
   }
   verHeroe(idx:number){
     this.router.navigate(['/heroe',idx])
     console.log(idx);
   }
+  // MostrarC(dato:string){
+  //   let d=[];
+  //   let a=[];
+  //   a=dato.split('');
+  //   for (let index = 0; index < 120; index++) {
+  //    d.push(a[index]);
+  //   }
+  //   return (d.join('')+  ` ...` );
+  // }
 
 }
