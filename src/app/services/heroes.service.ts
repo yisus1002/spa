@@ -77,10 +77,15 @@ private heroes:Heroe[]=[
       let heroesArr:Heroe[] = [];
       termino= termino.toLowerCase();
 
-      for(let heroe of this.heroes){
+      for(let i=0; i< this.heroes.length; i++){
+
+        let heroe=this.heroes[i];
+
         let nombre=heroe.nombre.toLowerCase();
+
         //Si lo encontro devuelve un numero mayor que 0, si no menor que 1
         if(nombre.indexOf(termino)>=0){
+          heroe.idx=i;
           heroesArr.push(heroe);
         }
       }
@@ -96,5 +101,6 @@ export interface Heroe{
     bio: string;
     img: string;
     aparicion: string;
-    casa: string;  
+    casa: string;
+    idx?:number;  
 }
