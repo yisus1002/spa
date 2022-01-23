@@ -1,6 +1,19 @@
-<div class="container container-fluid animated fadeIn fast">
-    <div class="containrt">
-        <h1 class="display-3">Comic App</h1>
-        <p class="lead">Esta es una aplicación de comics</p>
+<div class=" container-fluid animated fadeIn fast">
+    <div class="container">
+        <h1 class=" text-center display-3">Comic App</h1>
+        <div class="alert alert-primary lead" role="alert">
+            Esta es una aplicación de comics!
+          </div>
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 pb-3 g-4">
+            <div *ngFor="let im of  imagen" class="col animate fadeIn fast " >
+                <div class="card border border-light shadow rounded-3 mov" style="overflow: hidden;">
+                  <img [src]="im.img" class="card-img-top" [alt]="im.img" style="height: 170px; object-fit: cover;">
+                </div>
+            </div>
+
+
+          </div>
+
     </div>
 </div>

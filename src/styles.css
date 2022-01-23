@@ -32,3 +32,11 @@
   .fadeIn {
     animation-name: fadeIn;
   }
+  body{
+    color: white;
+  }
+  .mov:hover{
+    transform: translateY(-4px);
+    transition: all ease .2s;
+    box-shadow: 1px 4px 10px rgba(225, 218, 218, 0.93);
+  }

@@ -1,10 +1,10 @@
 <div class="col animate fadeIn fast" >
     <div class="card border border-light shadow">
-      <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre">
+      <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre" style="height: 190px; object-fit: cover;">
       <div class="card-body">
-        <h5 class="card-title">{{heroe.nombre}}</h5>
-        <p class="card-text" style="height: 150px; overflow-y: hidden; text-align: justify;">{{ heroe.bio}}</p>
-        <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+        <h5 class="card-title  text-success">{{heroe.nombre}}</h5>
+        <p class="card-text text-success" style="height: 150px; overflow-y: hidden; text-align: justify;">{{ heroe.bio}}</p>
+        <p class="card-text text-success"><small class="text-muted">{{ heroe.aparicion }}</small></p>
         <div class="d-grid gap-2">
             <button (click)="verHeroe()"
             class="btn btn-outline-primary" type="button">Ver mas
